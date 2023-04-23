@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_doorlock"
+        android:icon="@drawable/ic_outline_door_front_24"
+        android:title="@string/navigation_doorlock" />
+
+    <item
+        android:id="@+id/navigation_settings"
+        android:icon="@drawable/ic_round_settings_24"
+        android:title="@string/navigation_settings" />
+
+    <item
+        android:id="@+id/navigation_info"
+        android:icon="@drawable/ic_round_info_24"
+        android:title="@string/navigation_info" />
+</menu>

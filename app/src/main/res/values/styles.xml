@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyStyle.Night" parent="Theme.AppCompat" >
+        <item name="preferenceTheme">@style/MyStyle.Preference.v21</item>
+        ...
+    </style>
+
+    <!-- Preference Theme -->
+    <style name="MyStyle.Preference.v21" parent="@style/PreferenceThemeOverlay.v14.Material">
+        <item name="android:tint">@color/white</item>
+    </style>
+</resources>

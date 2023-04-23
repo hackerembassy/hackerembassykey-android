@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/uk_flag_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="70dp"
+        android:contentDescription="@string/uk_flag_desc"
+        android:src="@drawable/uk_flag"
+        app:layout_constraintBottom_toTopOf="@id/open_door_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/connection_status_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toTopOf="@id/open_door_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="4dp"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open_door_button"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:text="@string/open_door_button_text"
+        android:maxLines="1"
+        android:textSize="30sp"
+        app:iconSize="40dp"
+        android:textColor="@android:color/white"
+        app:cornerRadius="15dp"
+        app:icon="@drawable/ic_round_lock_open_24"
+        app:iconTint="@android:color/white"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/uk_flag_icon"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

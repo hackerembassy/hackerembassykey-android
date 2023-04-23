@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="hacker_prefs">
+    <PreferenceCategory
+        android:key="hacker_prefs"
+        android:title="MQTT Server">
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Username"
+            android:inputType="text"
+            android:key="username"
+            android:summary="MQTT Username"
+            android:title="Username"
+            android:icon="@drawable/ic_round_person_24" />
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Password"
+            android:inputType="textPassword"
+            android:key="password"
+            android:summary="MQTT Password"
+            android:title="Password"
+            android:icon="@drawable/ic_round_key_24"/>
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Host"
+            android:inputType="text"
+            android:key="host"
+            android:summary="MQTT Host"
+            android:title="Host"
+            android:icon="@drawable/ic_round_computer_24"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
